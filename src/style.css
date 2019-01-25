@@ -1,0 +1,201 @@
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: "San Fransisco", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvatica Neue", Helvatica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.145;
+  margin-bottom: 1.591rem;
+}
+
+h1,
+h2 {
+  font-weight: 500;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  letter-spacing: 1.2px;
+}
+
+h1,
+.herotxt {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5,
+h6 {
+  font-size: 1.1rem;
+}
+
+sub {
+  vertical-align: sub;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid #e1e4e8;
+  margin: 1.5em 0;
+}
+
+p {
+  margin-bottom: .81rem;
+  letter-spacing: .24px;
+}
+
+
+@media only screen and (max-width: 1100px) {
+  .main {
+    margin-top: 45px;
+  }
+
+  .content {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+/* TODO: add static and responsible columns for responsive mobile layout */
+/* DONE: changed font-normal and size */
+.btn {
+  display: inline-block;
+  border: 0;
+  padding: 0 16px;
+  height: 40px;
+  line-height: 40px;
+  font-size: .8235rem;
+  font-weight: 500;
+  border-radius: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  background: #37a866;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+  opacity: .88;
+  background: #000;
+}
+
+a.btn:hover {
+  text-decoration: none;
+}
+
+.app-card .btn {
+  padding: 0 20px;
+  border-radius: 50px;
+  height: 2rem;
+  line-height: 2.1rem;
+}
+
+.section-intro,
+.app-card {
+  margin-bottom: 60px;
+  padding: 36px;
+  background: #fff;
+}
+
+.section-intro {
+  box-shadow: 5px 25px 30px -25px rgba(42, 48, 93, 0.21);
+}
+
+.app-card {
+  display: flex;
+  margin-left: 15px;
+  margin-right: 15px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.08);
+}
+
+.app-no {
+  color: #F42;
+  line-height: 1;
+  margin-bottom: 1.2rem;
+}
+
+.current,
+.total {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.connector {
+  vertical-align: text-bottom;
+  vertical-align: -webkit-baseline-middle;
+  font-size: 1.1rem;
+}
+
+.app-meta {
+  margin-bottom: 1.2rem;
+}
+
+.app-meta h3 {
+  font-size: 2.6rem;
+  margin-bottom: -.2rem;
+}
+
+.app-meta .connector {
+  padding-left: .5rem;
+  vertical-align: middle;
+}
+
+.app-icon {
+  max-width: none !important;
+  border: 4px solid white;
+  border-radius: 1rem;
+}
+
+.app-link a {
+  margin-right: 2rem;
+}
+
+.app-link a:last-of-type {
+  margin-right: 0;
+}
+
+.col-left {
+  margin-right: 1.45rem;
+}
+
+.publisher {
+  font-size: 1.055rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  vertical-align: middle;
+}
+
+#scc {
+  border-top: 4px solid #934cd0;
+}
+
+#sml {
+  border-top: 4px solid #5976de;
+}
