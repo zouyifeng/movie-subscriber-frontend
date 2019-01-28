@@ -18,7 +18,6 @@ export function getStore(req) {
 }
 
 export const getClientStore = () => {
-  console.log(window.context)
   const defaultState = window.context.state;
   return createStore(
     reducer,

@@ -30,7 +30,6 @@ app.get('*', (req, res) => {
   const matchedRoutes = matchRoutes(routes, req.path);
   const promises = [];
   matchedRoutes.forEach(item => {
-    // console.log(typeof item.loadData)
     if (item.route.loadData) {
       const promise = new Promise((resolve, reject) => {
         item.route.loadData(store).then(resolve).catch(resolve)

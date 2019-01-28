@@ -7,16 +7,12 @@ import Card from './components/card'
 class Home extends Component {
 
   componentDidMount() {
-    console.log('fff')
-    // const { dispatch } = this.props
-    // dispatch(fetchAppsIfNeeded())
     if (!this.props.apps.length) {
       this.props.getHomeList()
     }
   }
   render() {
     const { apps } = this.props
-    // console.log(list)
     const totalapps = apps.length;
 
     return (
