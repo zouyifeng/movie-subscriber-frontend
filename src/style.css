@@ -168,7 +168,7 @@ a.btn:hover {
 }
 
 .app-icon {
-  max-width: none !important;
+  min-width: 100px;
   border: 4px solid white;
   border-radius: 1rem;
 }
