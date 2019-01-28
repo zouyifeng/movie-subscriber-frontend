@@ -8,22 +8,24 @@ import {template} from './template'
 import routes from '../routes' 
 
 const app = express()
+
 // Serving static files
 app.use(express.static('public'));
 
 // hide powered by express
 app.disable('x-powered-by');
+
 // start the server
 app.listen(process.env.PORT || 3000);
 
 app.use('/api', proxy('http://m.zouyifeng.xyz', {
   proxyReqPathResolver: function (req) {
-    return req.url
+    return '/wechat' + req.url
   }
 }));
+
 // server rendered home page
 app.get('*', (req, res) => {
-
   const store = getStore(req);
   const matchedRoutes = matchRoutes(routes, req.path);
   const promises = [];
@@ -51,11 +53,4 @@ app.get('*', (req, res) => {
     console.log(e)
     res.send('sorry, request error')
   })
-  // clientAxios(req).get('lastest-movie').then(result => {
-  //   const store = getStore(req);
-  //   const response = template(store, routes, req, {})
-  //   res.send(response);
-  // }).catch(e => {
-  //   console.log(e)
-  // })
 });

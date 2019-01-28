@@ -24,10 +24,10 @@ export const template = (store, routes, req, context) => {
 		return `
 			<html>
 				<head>
-					${helmet.title.toString()}
 					${helmet.meta.toString()}
-
+					<title>最新电影</title>
 					<style>${cssStr}</style>
+					<link rel="stylesheet" href="a.css">					
 				</head>
 				<body>
 					<div id="root">${content}</div>
@@ -36,7 +36,7 @@ export const template = (store, routes, req, context) => {
 							state: ${JSON.stringify(store.getState())}
 						}
 					</script>
-					<script src='/index.js'></script>
+					<script src="index.js"></script>
 				</body>
 			</html>
 	  `;

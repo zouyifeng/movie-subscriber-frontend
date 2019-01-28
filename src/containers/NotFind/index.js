@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Redirect } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 class NotFind extends Component {
 
@@ -12,7 +12,7 @@ class NotFind extends Component {
 
         return (
             <div>
-                not find 
+                not find <Link to={`/list`}>去列表页</Link>
 			</div>
         )
     }
