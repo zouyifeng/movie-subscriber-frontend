@@ -8,7 +8,6 @@ class CardRight extends Component {
       <div className="col-right">
         <div className="app-meta">
            <Title name={this.props.name} publisher={this.props.app.actor}/>
-           <br/>
            <span className="app-lic">类型：{this.props.app.type}     评分：{this.props.app.rate}</span>
         </div>
         <div className="app-intro" dangerouslySetInnerHTML={{__html: this.props.app.intro}} />
