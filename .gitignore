@@ -1,5 +1,5 @@
 node_modules
 natapp
 natapp.sh
-public
-build
+public/*
+build/*
