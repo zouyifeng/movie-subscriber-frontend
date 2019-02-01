@@ -10,8 +10,10 @@ export const getHomeList = () => {
     return axiosInstance.get('lastest-movie')
       .then((res) => {
         const list = res.data
+        console.log(list)
         dispatch(changeList(list))
       }).catch(e => {
+        console.log('出错了')
         console.log(e)
       })
   }

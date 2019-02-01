@@ -20,6 +20,7 @@ app.listen(process.env.PORT || 3000);
 
 app.use('/api', proxy('http://m.zouyifeng.xyz', {
   proxyReqPathResolver: function (req) {
+    console.log('/wechat' + req.url)
     return '/wechat' + req.url
   }
 }));

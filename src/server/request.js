@@ -3,6 +3,7 @@ import axios from 'axios';
 
 const createInstance = (req) => axios.create({
 	baseURL: 'http://m.zouyifeng.xyz/wechat',
+	// baseURL: 'http://localhost:8089',
 	headers: {
 		cookie: req.get('cookie') || ''
 	},
