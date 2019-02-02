@@ -27,6 +27,7 @@ export const template = (store, routes, req, context) => {
 					${helmet.meta.toString()}
 					<title>最新电影</title>
 					<style>${cssStr}</style>
+					<meta name="viewport" content="user-scalable=no" />
 				</head>
 				<body>
 					<div id="root">${content}</div>
