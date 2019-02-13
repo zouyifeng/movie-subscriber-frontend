@@ -1,9 +1,7 @@
 import express from 'express'
-import path from 'path'
 import proxy from 'express-http-proxy'
 import { matchRoutes } from 'react-router-config'
-import clientAxios from './request'
-import {getStore, getClientStore} from '../store'
+import {getStore} from '../store'
 import {template} from './template'
 import routes from '../routes' 
 
