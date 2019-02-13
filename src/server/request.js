@@ -2,8 +2,8 @@ import axios from 'axios';
 // import config from '../config/index'
 
 const createInstance = (req) => axios.create({
-	baseURL: 'http://m.zouyifeng.xyz/wechat',
-	// baseURL: 'http://localhost:8089',
+	// baseURL: 'http://m.zouyifeng.xyz/wechat',
+	baseURL: 'http://localhost:8089',
 	headers: {
 		cookie: req.get('cookie') || ''
 	},
