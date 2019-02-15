@@ -13,7 +13,7 @@ class NotFind extends Component {
         return (
             <div>
                 <p>not find</p>
-                <Link to={`/wechat-page/list`}>去列表页</Link>
+                <Link to={`/list`}>去列表页</Link>
 			</div>
         )
     }
