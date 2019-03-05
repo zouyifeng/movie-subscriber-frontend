@@ -6,9 +6,9 @@
 ![电影天堂](https://img.zouyifeng.xyz//blog/dytt8.png)
 <p align="center">电影天堂</p>
 
-<img src="https://img.zouyifeng.xyz//blog/movie-news.png" display="margin: 0 auto; display: block;" width="50%" height="50%">
+<img src="https://img.zouyifeng.xyz//blog/movie-news.png" style="margin: 0 auto; display: block;" width="50%" height="50%">
 <p align="center">模板消息</p>
 
 
-<img src="https://img.zouyifeng.xyz//blog/movie-news-detail.png" display="margin: 0 auto; display: block;" width="50%" height="50%">
+<img src="https://img.zouyifeng.xyz//blog/movie-news-detail.png" style="margin: 0 auto; display: block;" width="50%" height="50%">
 <p align="center">电影详情</p>
