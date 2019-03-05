@@ -6,8 +6,8 @@
 ![电影天堂](https://img.zouyifeng.xyz//blog/dytt8.png)
 <center>电影天堂</center>
 
-![模板消息](https://img.zouyifeng.xyz//blog/movie-news.png)
+<img src="https://img.zouyifeng.xyz//blog/movie-news.png" width="50%" height="50%">
 <center>模板消息</center>
 
-![最新电影列表](https://img.zouyifeng.xyz//blog/movie-news-detail.png)
+<img src="https://img.zouyifeng.xyz//blog/movie-news-detail.png" width="50%" height="50%">
 <center>最新电影列表</center>
