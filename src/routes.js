@@ -19,6 +19,7 @@ export default [{
     }, {
       path: '/wechat-page/movie/:id',
       component: Movie,
+      exact: true,
       key: 'movie'
     }, {
       component: NotFind

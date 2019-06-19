@@ -1,7 +1,15 @@
 import axios from 'axios';
 
-const instance = axios.create({
-	baseURL: '/api'
+const createInstance = axios.create({
+	// baseURL: 'http://m.zouyifeng.xyz/wechat',
+	baseURL: 'http://localhost:8089/',
+	// headers: {
+	// 	cookie: req.get('cookie') || ''
+	// },
+	// params: {
+		// secret: config.secret
+	// }
 });
 
-export default instance;
+
+export default createInstance;
