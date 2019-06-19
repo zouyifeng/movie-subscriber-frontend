@@ -141,7 +141,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n\tvalue: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n\tvalue: true\n});\n\nvar _axios = __webpack_require__(/*! axios */ \"axios\");\n\nvar _axios2 = _interopRequireDefault(_axios);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar createInstance = _axios2.default.create({\n\t// baseURL: 'http://m.zouyifeng.xyz/wechat',\n\tbaseURL: 'http://localhost:8089/'\n\t// headers: {\n\t// \tcookie: req.get('cookie') || ''\n\t// },\n\t// params: {\n\t// secret: config.secret\n\t// }\n});\n\nexports.default = createInstance;\n\n//# sourceURL=webpack:///./src/client/request.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n\tvalue: true\n});\n\nvar _axios = __webpack_require__(/*! axios */ \"axios\");\n\nvar _axios2 = _interopRequireDefault(_axios);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar createInstance = _axios2.default.create({\n\tbaseURL: 'http://m.zouyifeng.xyz/wechat'\n\t// baseURL: 'http://localhost:8089/',\n\t// headers: {\n\t// \tcookie: req.get('cookie') || ''\n\t// },\n\t// params: {\n\t// secret: config.secret\n\t// }\n});\n\nexports.default = createInstance;\n\n//# sourceURL=webpack:///./src/client/request.js?");
 
 /***/ }),
 
