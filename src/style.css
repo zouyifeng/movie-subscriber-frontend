@@ -199,3 +199,8 @@ a.btn:hover {
 #sml {
   border-top: 4px solid #5976de;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
