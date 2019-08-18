@@ -10,7 +10,7 @@ class Card extends Component {
 
     for(let app of props.apps){
       cards.push(
-        <a href={`/movie/${app.id}`} className="app-card" key={app.id}>
+        <a href={`./movie/${app.id}`} className="app-card" key={app.id}>
           <CardLeft img={app.cover} appno={cardNumber} totalapps={props.totalapps} />
           <CardRight name={app.title} app={app}/>
         </a>
