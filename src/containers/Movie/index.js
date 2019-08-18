@@ -11,7 +11,8 @@ class Movie extends Component {
             publish_time: '',
             intro: '',
             country: '',
-            actor: ''
+            actor: '',
+            cover: ''
         };
     }
     componentDidMount() {
@@ -20,15 +21,17 @@ class Movie extends Component {
         clientRequest.get(`/get-movie/${id}`).then(data => {
             console.log(data.data[0]);
             const movie = data.data[0]
-            const { title, rate, type, publish_time, intro, country, actor } = movie;
+            const { title, rate, type, publish_time, intro, country, actor, cover } = movie;
+            console.log('movie: ', movie);
             // document.getElementById("#test").innerText = JSON.toString(data)
-            this.setState({ title, rate, type, publish_time, intro, country, actor });
+            this.setState({ title, rate, type, publish_time, intro, country, actor, cover });
         })
     }
     render() {
         return (
             <div id="test">
                 <p>{this.state.title}</p>
+                <img width='100%' src={this.state.cover}/>
                 <p>{this.state.type}</p>
                 <p>{this.state.actor}</p>
                 <p>{this.state.country}</p>
