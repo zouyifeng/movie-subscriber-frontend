@@ -35,7 +35,7 @@ export const template = (store, routes, req, context) => {
 								state: ${JSON.stringify(store.getState())}
 							}
 						</script>
-						<script src="/static/index.js"></script> 
+						<script src="./static/index.js"></script> 
 					</body>
 				</html>`;
 	
