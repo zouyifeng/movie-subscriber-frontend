@@ -8,7 +8,7 @@ import routes from '../routes'
 const app = express()
 
 // Serving static files
-app.use(express.static('public'));
+app.use('/static', express.static('public'));
 
 // hide powered by express
 app.disable('x-powered-by');
