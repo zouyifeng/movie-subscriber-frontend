@@ -16,7 +16,7 @@ app.disable('x-powered-by');
 // start the server
 app.listen(process.env.PORT || 3000);
 
-app.use('/api', proxy('http://m.zouyifeng.xyz', {
+app.use('/api', proxy('http://m.zouyifeng.cn', {
   proxyReqPathResolver: function (req) {
     console.log('/wechat' + req.url)
     return '/wechat' + req.url
