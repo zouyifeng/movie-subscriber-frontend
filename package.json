@@ -13,6 +13,8 @@
   "author": "Rohit kumar",
   "license": "CC BY 4.0",
   "dependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "axios": "~0.18.0",
     "babel-core": "~6.26.3",
     "babel-loader": "~7.1.5",
@@ -38,7 +40,13 @@
   },
   "devDependencies": {
     "css-loader": "~1.0.0",
+    "husky": "^4.2.5",
     "isomorphic-style-loader": "~4.0.0",
     "style-loader": "~0.22.1"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
