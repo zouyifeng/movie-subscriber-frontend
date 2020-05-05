@@ -16,13 +16,13 @@ class Movie extends Component {
         };
     }
     componentDidMount() {
-        console.log(this.props.match.params.id);
+        // console.log(this.props.match.params.id);
         const id = this.props.match.params.id;
         clientRequest.get(`/get-movie/${id}`).then(data => {
-            console.log(data.data[0]);
+            // console.log(data.data[0]);
             const movie = data.data[0]
             const { title, rate, type, publish_time, intro, country, actor, cover } = movie;
-            console.log('movie: ', movie);
+            // console.log('movie: ', movie);
             // document.getElementById("#test").innerText = JSON.toString(data)
             this.setState({ title, rate, type, publish_time, intro, country, actor, cover });
         })

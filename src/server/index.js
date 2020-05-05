@@ -16,9 +16,9 @@ app.disable('x-powered-by');
 // start the server
 app.listen(process.env.PORT || 3000);
 
-app.use('/api', proxy('http://m.zouyifeng.cn', {
+app.use('/api', proxy('http://203.195.188.251', {
   proxyReqPathResolver: function (req) {
-    console.log('/wechat' + req.url)
+    // console.log('/wechat' + req.url)
     return '/wechat' + req.url
   }
 }));
@@ -48,7 +48,7 @@ app.get('*', (req, res) => {
       res.send(html)
     }
   }).catch(e => {
-    console.log(e)
+    // console.log(e)
     res.send('sorry, request error')
   })
 });

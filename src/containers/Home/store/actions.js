@@ -13,7 +13,7 @@ export const getHomeList = () => {
         dispatch(changeList(list))
       }).catch(e => {
         console.log('出错了')
-        console.log(e)
+        // console.log(e)
       })
   }
 }
